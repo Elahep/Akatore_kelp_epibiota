@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --account=uoo02782
-#SBATCH --job-name=4-recolnth
+#SBATCH --account=XXXX
+#SBATCH --job-name=model1_antarctica
 #SBATCH --partition=large
 #SBATCH --time=25:00:00
 #SBATCH --mem=10G
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=elahe.parvizi91@yahoo.com
+#SBATCH --mail-user=XXXX
 #SBATCH --cpus-per-task=8
 
 
