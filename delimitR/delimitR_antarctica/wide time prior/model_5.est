@@ -1,0 +1,60 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1  N_POP0       unif     10    200000   output
+1  N_POP1       unif     10    200000   output
+1  N_POP2       unif     10    200000   output
+1  N_POP3		unif     10    200000   output
+1  N_POPAnc		unif     10    200000   output
+1  N_BOT2       unif     10    1000   output 
+
+0  ADMIX3       unif     0     1	output	
+
+1  TDIV         unif     200    3500   output
+1  TANC1       unif     200    3500   output
+1  TANC2       unif     200    3500   output
+1  DURBOT2         unif     1    100   output 
+
+0  NM01        logunif  1e-5   50    hide
+0  NM02        logunif  1e-5   50    hide
+0  NM03        logunif  1e-5   50    hide
+0  NM10        logunif  1e-5   50    hide
+0  NM12		   logunif	1e-5   50    hide
+0  NM13		   logunif	1e-5   50    hide
+0  NM20        logunif  1e-5   50    hide
+0  NM21        logunif  1e-5   50    hide
+0  NM23        logunif  1e-5   50    hide
+0  NM30        logunif  1e-5   50    hide
+0  NM31		   logunif	1e-5   50    hide
+0  NM32		   logunif	1e-5   50    hide
+
+
+[RULES]
+
+TDIV < TANC1
+TDIV < TANC2
+TANC2 > TANC1
+
+[COMPLEX PARAMETERS]
+
+0  MIG01 =  NM01/N_POP0  output
+0  MIG02 =  NM02/N_POP0  output
+0  MIG03 =  NM03/N_POP0  output
+0  MIG10 =  NM10/N_POP1  output
+0  MIG12 =  NM12/N_POP1  output
+0  MIG13 =  NM13/N_POP1  output
+0  MIG20 =  NM20/N_POP2  output
+0  MIG21 =  NM21/N_POP2  output
+0  MIG23 =  NM23/N_POP2  output
+0  MIG30 =  NM30/N_POP3  output
+0  MIG31 =  NM31/N_POP3  output
+0  MIG32 =  NM32/N_POP3  output
+
+0  RESBOT2 =  N_BOT2/N_POP2  hide
+
+0  RESPOPAnc = N_POPAnc/N_POP0 hide
+
+1  TBOT2  = TDIV-DURBOT2  output
