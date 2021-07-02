@@ -37,7 +37,7 @@ write.table(pca_scores, "./PCA/10PCs.txt")
 
 ##PCA plotting
 ggplot(pca_scores, aes(PC1, PC2)) +
-  geom_point(size=3, aes(colour=PC$pop), alpha = 0.7, shape=19) +
+  geom_point(size=3, aes(colour=pca_scores$pop), alpha = 0.7, shape=19) +
     scale_color_manual(values = c("#3c4d0b", "#658114", "#e2be3d", "#ed5537","#90d796", "#5310f0")) +
   theme_classic()
 ##colors used in the manuscript for different clusters
@@ -54,7 +54,7 @@ library(LEA)
 
 ##create LEA input file (.geno) from the vcf file. Using the function bellow, the .geno file will be created 
 ##and saved in the working directory.
-data_LEA <- vcf2geno(input.file = "populations.snps.vcf", output.file = "data_LEA.geno")
+data_LEA <- vcf2geno(input.file = "*.vcf", output.file = "data_LEA.geno")
 
 ##snmf clustering
 projectalpha = NULL
