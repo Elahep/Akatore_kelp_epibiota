@@ -9,4 +9,4 @@
 #SBATCH --cpus-per-task=8
 
 
-./fsc26 -t model1.tpl -e model1.est -m -n500000 -L40 -c8 -B12 --removeZeroSFS -M --multiSFS
+./fsc26 -t topology_test_model1.tpl -e topology_test_model1.est -m -n500000 -L40 -c8 -B12 --removeZeroSFS -M --multiSFS
