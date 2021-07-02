@@ -1,5 +1,5 @@
 #!/bin/bash
-##loop to extract best likelihoods, by Eli, 28Oct2020
+##loop to extract best likelihoods from fastsimcoal iterations, by Eli, 28Oct2020
 ##change XXX according to the name of the model (model1, model2, etc.)
 
 for i in {1..2}
