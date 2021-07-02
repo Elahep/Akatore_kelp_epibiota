@@ -1,0 +1,39 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1  N_POP0       unif     10    200000   output
+1  N_POP1       unif     10    200000   output
+1  N_POP2       unif     10    200000   output
+1  N_POPAnc		unif     10    200000   output
+1  N_BOT1       unif     10    1000   output bounded
+
+1  TDIV         unif     200    500   output
+1  TANC      unif     500    3500   output
+1  DURBOT1         unif     1    100   output bounded
+
+0  NM01        logunif  1e-5   50    hide
+0  NM02        logunif  1e-5   50    hide
+0  NM10        logunif  1e-5   50    hide
+0  NM12		   logunif	1e-5   50    hide
+0  NM20        logunif  1e-5   50    hide
+0  NM21        logunif  1e-5   50    hide
+
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+
+0  MIG01 =  NM01/N_POP0  output
+0  MIG02 =  NM02/N_POP0  output
+0  MIG10 =  NM10/N_POP1  output
+0  MIG12 =  NM12/N_POP1  output
+0  MIG20 =  NM20/N_POP2  output
+0  MIG21 =  NM21/N_POP2  output
+
+0  RESPOPAnc = N_POPAnc/N_POP0 hide
+0  RESBOT1 =  N_BOT1/N_POP1  hide
+
+1  TBOT1 = TDIV-DURBOT1  output
