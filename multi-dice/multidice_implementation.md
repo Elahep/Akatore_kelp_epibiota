@@ -14,12 +14,12 @@ We then remove the position with invariant sites from each of the four files wit
 
 ```
 #/usr/bin/sh
-cp -r ancesNe_100to1000_taubuff50_to2000ya ancesNe_100to1000_taubuff50_to2000ya_no0
+cp -r ancesNe_100to1000_taubuff50_to2000ya ancesNe_100to1000_taubuff50_to2000yano0
 cd ancesNe_100to1000_taubuff50_to2000ya
-cut -f 2-39 dice.simulations1 > ../ancesNe_100to1000_taubuff50_to2000ya_no0/dice.simulations1
-cut -f 2-39 dice.simulations2 > ../ancesNe_100to1000_taubuff50_to2000ya_no0/dice.simulations2
-cut -f 2-39 dice.simulations3 > ../ancesNe_100to1000_taubuff50_to2000ya_no0/dice.simulations3
-cut -f 2-39 dice.simulations1 > ../ancesNe_100to1000_taubuff50_to2000ya_no0/dice.simulations4
+cut -f 2-39 dice.simulations1 > ../ancesNe_100to1000_taubuff50_to2000yano0/dice.simulations1
+cut -f 2-39 dice.simulations2 > ../ancesNe_100to1000_taubuff50_to2000yano0/dice.simulations2
+cut -f 2-39 dice.simulations3 > ../ancesNe_100to1000_taubuff50_to2000yano0/dice.simulations3
+cut -f 2-39 dice.simulations1 > ../ancesNe_100to1000_taubuff50_to2000yano0/dice.simulations4
 ```
 
 The output is then visualised in [multidice_Rvisualisation.R](multidice_Rvisualisation.R)
