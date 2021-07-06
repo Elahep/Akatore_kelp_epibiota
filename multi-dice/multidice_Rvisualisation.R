@@ -130,6 +130,6 @@ multidice_inference<-function(analysis_name ,path_multidice_files=".", num.haplo
 }
 
 ## Main program
-
+#Original SFS files available on request to ellie.parvizi@gmail.com or dutoit.ludovic@gmail.com
 dir.create("ancesNe_100to1000_taubuff50_to2000yano0INFERENCE")
 multidice_inference("ancesNe_100to1000_taubuff50_to2000yano0" ,path_multidice_files="ancesNe_100to1000_taubuff50_to2000yano0INFERENCE/",tol=0.05,vector_original_files=c("original_SFS/SFSprop/antarctica_MAFpop0no0.obs_prop","~/repos/mahuika/earthquake_multidice/original_SFS/SFSprop/Chiton_MAFpop0no0.obs_prop","~/repos/mahuika/earthquake_multidice/original_SFS/SFSprop/Limnoria_MAFpop0no0.obs_prop","~/repos/mahuika/earthquake_multidice/original_SFS/SFSprop/poha_MAFpop0no0.obs_prop"),species= c("antarctica","Chiton","Limnoria","poha") )
