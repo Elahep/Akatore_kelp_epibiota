@@ -2,7 +2,7 @@
 
 This file details the multidice implementation.
 
-The simulation is ran with a folder ```ancesNe_100to1000_taubuff50_to2000ya```. Parameters are detailed in the manuscript, but if unclear feel free to contact the authors or to raise an issue in [https://github.com/Elahep/Akatore_kelp_epibiota/issues](https://github.com/Elahep/Akatore_kelp_epibiota/issues)
+The simulation is ran with a folder ```ancesNe_100to1000_taubuff50_to2000ya```. Parameters are detailed in the manuscript, but if unclear feel free to contact the authors or to raise a [Github issue](https://github.com/Elahep/Akatore_kelp_epibiota/issues)
 
 ```
 #/usr/bin/env R
