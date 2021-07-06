@@ -10,7 +10,7 @@ source("Multi-DICE-1.0.1.R")
 output = dice.sims(num.sims=100000, num.taxa=4, num.partitions =1 ,num.haploid.samples=38, num.ind.sites=2000, tau.psi.prior=1, tau.zeta.prior=c(1:4)/4, tau.shared.prior=c(400:2000), epsilon.idio.prior=c(10:1000)/100000, NE.idio.prior=100:1000,fsc2path='/home/ludovic.dutoit/bin/fsc26', output.directory='.', gen.times = c(2, 2, 2, 0.4), tau.buffer = 50)
 ```
 
-We then remove the position with invariant sites from each of the four files with 100,000 simulated SFS and put that in a new directory along with the other input and output files of Multidice.
+We then remove the positiosn invariant sites from each of the four files with 100,000 simulated SFS and put that in a new directory along with the other input and output files of Multi-idice.
 
 ```
 #/usr/bin/sh
