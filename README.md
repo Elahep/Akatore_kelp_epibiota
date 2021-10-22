@@ -1,2 +1,6 @@
-# Akatore kelp and epibiota GBS
-Comparative phylogeographic analysis of Durvillaea kelps and associated epibiota in response to the ancient coastal uplift event in Akatore, southeast New Zealand
+# Population genomic analysis and demographic modeling of kelps and epibiota
+
+The data and codes in this repository have been used in:
+
+Parvizi, E. Dutoit, L. Fraser, C. Craw, D. Waters, J. (in press). Concordant phylogeographic responses to large-scale coastal disturbance in intertidal macroalgae and their epibiota. Molecular Ecology.
+
